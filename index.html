@@ -1,58 +1,114 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>Yuxiang Dai</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/yxd.png">
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body class="is-loading">
+	<body>
 
-		<!-- Wrapper -->
+		<!-- Wrapper-->
 			<div id="wrapper">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/me.jpeg" alt="" /></span>
-							<h1>Yuxiang Dai</h1>
-							<p>Developer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="http://www.github.com/yuxiangdai" class="fa fa-github" aria-hidden="true"></a></li>
-								<li><a href="http://www.linkedin.com/in/yuxiangdai" class="fa fa-linkedin"></a></li>
-								<li><a href="http://www.behance.net/yuxiangdai" class="fa fa-behance fa"></a></li>
-								<li><a href="http://www.500px.com/yuxiangdai" class="fa fa-500px"></a></li>
-							</ul>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="buttons"><span>Home</span></a>
+						<a href="#about" class="icon buttons"><span>About</span></a>
+						<a href="#skills" class="icon buttons"><span>Skills</span></a>
+						<a href="https://drive.google.com/open?id=0B3h9DaEAjF_nZkc3T3RrbjZwNEE" class="icon buttons"><span>Resume</span></a>	
+					</nav>
 
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Yuxiang Dai</h1>
+									<div class="icons">
+										<a href="https://github.com/yuxiangdai"><i class="fa fa-github fa-2x" id="github" aria-hidden="true"></i></a>
+										<a href="https://linkedin.com/in/yuxiangdai"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+										<a href="https://github.com/yuxiangdai"><i class="fa fa-behance fa-2x" aria-hidden="true" id="behance"></i></a>
+										<a href="https://github.com/yuxiangdai"><i class="fa fa-500px fa-2x" aria-hidden="true" id="fivehundredpx"></i></a>
+									</div>
 									
 									
-						</footer>
-					</section>
+										
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img style="size:50%" src="images/me.jpeg" alt="" />
+								</a>
+							</article>
+
+						<!-- About -->
+							<article id="about" class="panel">
+								<header>
+								<h2>About</h2>
+								</header>
+								<p>
+									I'm an undergraduate second year <a href="http://engsci.utoronto.ca/explore_our_program/about_engsci/">Engineering Science</a>
+									 student at the University of Toronto. 
+									<br>
+									<br>
+									 In my free time, I like to do a lot of full-stack web development. Recently, I've also been dabbling in Data Science and Machine Learning.
+									 <br>
+									 <br>
+									 The best way to contact me is through my email: <a href="mailto:yuxiang.dai@mail.utoronto.ca" target="_top">yuxiang.dai@mail.utoronto.ca</a>.
+								</p>
+							</article>
+
+						<!-- Links -->
+							<article id="skills" class="panel">
+								<header>
+									<h2>Skills</h2>
+								</header>
+								<div>
+									<h3>Languages</h3>
+									<p>
+									<strong>Advanced:</strong>
+									Javascript, Python 
+									<br>
+									<strong>Intermediate:</strong>
+									Java, C
+									<br>
+									<strong>Basic:</strong>
+									Swift, R, MATLAB
+									</p>
+
+									<h3>Web Development</h3>
+									<p>HTML5/CSS3, jQuery, Node.js, Express.js, AngularJS, MongoDB, Flask</p>
+
+									<h3>Tools</h3>
+									<p>Git, Heroku, Docker, Illustrator, Photoshop, Sketch, Figma, XCode, Android Studio, Microsoft Azure</p>
+								</div>
+								
+							</article>
+
+						
 
 				<!-- Footer -->
-					<footer id="footer">
+					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Yuxiang Dai</li>
+							<li>&copy; Yuxiang Dai.</li>
 						</ul>
-					</footer>
+					</div>
 
 			</div>
 
 		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
